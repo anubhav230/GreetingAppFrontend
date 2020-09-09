@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.side-bar {
+    position: relative;
+    top: -10px;
+    width: 187px;
+    height: 100vh;
+    z-index: 2;
+    float: left;
+    background:url('./images.jpg');  
+    background-position: top;
+    opacity: 0.6;
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+}
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    display: inline;
+}
+
+.vertical-bar {
+    position: relative;
+    top: 50px;
+    color: black;
+}
