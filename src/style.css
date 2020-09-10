@@ -1,28 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
 .side-bar {
     position: relative;
-    top: -10px;
-    width: 187px;
-    height: 100vh;
+    top: -50px;
+    width: 180px;
+    height: 100%;
     z-index: 2;
     float: left;
     background:url('./images.jpg');  
     background-position: top;
-    opacity: 0.6;
+    opacity: 0.8;
     background-size: cover;
     font-family: 'Work Sans', sans-serif;
 }
 li, a{
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    color: black;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: inline;
 }
 
 .vertical-bar {
     position: relative;
-    top: 50px;
-    color: black;
+    top: 90px;
+    color: rgb(0, 0, 0);
+}
+.navbar-nav{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.navbar{
+    padding-top: 0;
+    padding-left: 200px;
+}
+
+
+#signin{
+    border: 2px solid rgb(247, 249, 250);
+    border-radius: 20px;
+    padding: 0.5rem 1rem!important;
+    line-height: 10px;
+
+}
+#signup{
+    background-color: deepskyblue;
+    border: 2px solid rgb(246, 248, 248);
+    border-radius: 20px;
+    padding: 0.5rem 1rem!important;
+    line-height: 10px;
 }
