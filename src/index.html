@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
     <head>   
-      <meta charset="UTF-8">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -64,7 +65,7 @@
                 <form>
                   <div>
                     <label><i class="fa fa-user"></i> FirstName</label>
-                    <input type="text" name="" id="textbox" class="form-control">
+                    <input type="text" name="" id="textbox" class="form-control" required>
                   </div>
 
                   <div>
@@ -110,33 +111,7 @@
     </div>
 
     <h2>Basic panels layout</h2>
-    <div class="card">
-      <div class="card-body">
-        <p class="card-text"><small class="text-muted">ObjectId(5f57ed99c0d95e4b9c588ce0)</small></p>
-        <span class="card-title">Hello</span>
-        <br>
-        <span class="card-text">Anubhav</span>
-        <p class="card-text"><small class="text-muted">15 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <p class="card-text"><small class="text-muted">ObjectId(5f57ed99c0d95e4b9c588ce0)</small></p>
-        <span class="card-title">Hello</span>
-        <br>
-        <span class="card-text">Anubhav</span>
-        <p class="card-text"><small class="text-muted">15 mins ago</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <p class="card-text"><small class="text-muted">ObjectId(5f57ed99c0d95e4b9c588ce0)</small></p>
-        <span class="card-title">Hello</span>
-        <br>
-        <span class="card-text">Anubhav</span>
-        <p class="card-text"><small class="text-muted">15 mins ago</small></p>
-      </div>
-    </div>
-    
+    <div class="list-of-greeting" id="messages-list"></div>
+    <script src="../js/App.js" async defer></script>
   </body>
 </html>
