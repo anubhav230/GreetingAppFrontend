@@ -86,24 +86,25 @@ h2{
 
 
 .modal {
-    
+
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
-    padding-right: 33%;
+    padding-right: 0%;
     right: 50%;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(8, 8, 8); /* Fallback color */
+    background-color: rgba(2, 2, 2, 0.4); /* Black w/ opacity */
+    box-shadow: 50px 0px 20px 0px #02021f;
 }
 
 .modal-content{
-    padding: 10px;
+    padding: 20px;
     color: rgb(2, 2, 2);
-    background-color: rgb(209, 245, 245);
+    background-color: rgb(139, 209, 241);
 }
