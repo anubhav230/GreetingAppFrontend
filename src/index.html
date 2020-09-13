@@ -52,7 +52,9 @@
 
     <div class="side-bar" >
       <nav class="vertical-bar">
-        <a class="nav-link"><i class="fas fa-list"></i>List</a>
+
+        <a class="nav-link"><i class="fas fa-list" id="list" onclick=""></i>List</a>
+        <!-- <button type="button" i>Delete</button> -->
         <a class="nav-link" data-target="#mymodal" data-toggle="modal" data-backdrop=""><i class="fas fa-gem"></i>Add</a>
         <div class="modal fade" id="mymodal">
           <div class="modal-dialog">
@@ -76,7 +78,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
               </div>
             </div>
           </div>
@@ -109,7 +111,6 @@
         </div> 
       </nav>      
     </div>
-
     <h2>Basic panels layout</h2>
     <div class="list-of-greeting" id="messages-list"></div>
     <script src="../js/App.js" async defer></script>

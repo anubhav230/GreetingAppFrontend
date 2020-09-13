@@ -142,4 +142,15 @@ h2{
     flex-wrap: wrap;
     flex-basis: 33.333333%;
     font-family: 'Roboto', sans-serif;
+
+  }
+
+  .time-div{
+      font-size: 10px;
+      color: rgb(131, 126, 126)
+  }
+
+  .id-div{
+    font-size: 11px;
+    color: rgb(82, 79, 79)
   }
