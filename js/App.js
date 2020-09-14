@@ -101,3 +101,35 @@ function deleteMessage(id) {
         })
         .catch(err => console.log(err));
 }
+
+function edit() {
+    let id = document.getElementById('id').value;
+    let firstName = document.getElementById('editFirstName').value;
+    let lastName = document.getElementById('editLastName').value;
+    console.log(id)
+    console.log(firstName);
+    console.log(lastName);
+
+    updateData(id, firstName, lastName)
+}
+
+
+function updateData(id, firstName, lastName) {
+    fetch('http://localhost:3000/' + id, {
+        headers: {
+            'Accept': 'application/json',
+            "content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({
+            firstName: firstName,
+            lastName: lastName,
+        }),
+        method: "PUT"
+    })
+        .then(data => { return data.json() })
+        .then(res => {
+            console.log(res);
+            showList();
+        })
+        .catch(err => { return err });
+}
