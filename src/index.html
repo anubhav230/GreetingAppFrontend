@@ -53,7 +53,7 @@
     <div class="side-bar" >
       <nav class="vertical-bar">
 
-        <a class="nav-link"><i class="fas fa-list" id="list" onclick=""></i>List</a>
+        <a class="nav-link"><i class="fas fa-list" id="list" onclick="showList()"></i>List</a>
         <!-- <button type="button" i>Delete</button> -->
         <a class="nav-link" data-target="#mymodal" data-toggle="modal" data-backdrop=""><i class="fas fa-gem"></i>Add</a>
         <div class="modal fade" id="mymodal">
@@ -64,21 +64,22 @@
                  <button type="button" class="close" data-dismiss="modal"> &times;</button>
               </div>
               <div class="">
-                <form>
+                <form class="addpopup" id="add">
                   <div>
-                    <label><i class="fa fa-user"></i> FirstName</label>
-                    <input type="text" name="" id="textbox" class="form-control" required>
+                    <label><i class="fa fa-user"></i>FirstName</label>
+                    <input type="text" class="form-control" id="addFirstName" />
                   </div>
 
                   <div>
-                    <label><i class="fa fa-user"></i> LastName</label>
-                    <input type="text" name="" id="textbox" class="form-control">
+                    <label><i class="fa fa-user"></i>LastName</label>
+                    <input type="text" class="form-control" id="addLastName" name="firstname">
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="add()">Submit</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                
               </div>
             </div>
           </div>
@@ -98,13 +99,13 @@
                 <form>
                   <div>
                     <label><i class="fa fa-user"></i> Enter Object ID</label>
-                    <input type="text" name="" id="textbox" class="form-control">
+                    <input type="text" name="" id="addId" class="form-control">
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-danger" onclick="deleteGrerting()">Delete</button>
               </div>
             </div>
           </div>
