@@ -77,7 +77,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="add()">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="add()" data-dismiss="modal">Submit</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 
               </div>
@@ -85,7 +85,44 @@
           </div>
         </div>
 
-        <a class="nav-link" href="#" data-target="#mymodal" data-toggle="modal" data-backdrop="false"><i class="fa fa-pencil">Edit</i>
+        <div class="modal" id="updateModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                 <span>Enter Name</span> 
+                 <button type="button" class="close" data-dismiss="modal"> &times;</button>
+              </div>
+              <div class="">
+                <form class="" id="add">
+                  <div>
+                    <label><i class="fa fa-user"></i>ID</label>
+                    <input type="text" class="form-control" id="id" />
+                  </div>
+
+                  <div>
+                    <label><i class="fa fa-user"></i>FirstName</label>
+                    <input type="text" class="form-control" id="editFirstName" />
+                  </div>
+
+                  <div>
+                    <label><i class="fa fa-user"></i>LastName</label>
+                    <input type="text" class="form-control" id="editLastName" name="">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="edit()" data-dismiss="modal">Submit</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link" href="#" data-target="#updateModal" data-toggle="modal" data-backdrop=""><i class="fa fa-pencil">Edit</i>
+          <!-- kjshdfds -->
+         
+
         <a class="nav-link" href="#" data-target="#deletemodal" data-toggle="modal" data-backdrop="false"><i class="fas fa-trash-alt"></i>Delete</a>
 
         <div class="modal" id="deletemodal">
@@ -105,7 +142,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" onclick="deleteGrerting()">Delete</button>
+                <button type="button" class="btn btn-danger" onclick="deleteGrerting()" data-dismiss="modal">Delete</button>
               </div>
             </div>
           </div>
